@@ -38,9 +38,22 @@ function validasiform() {
 }
 
 // fungsi klik profil hero
-function klikProfil() {
-    document.getElementById("profil-guy").innerHTML = `
-        <h3>Guy Gardner</h3>
-        <p>Guy Gardner adalah seorang anggota Justice Gang yang dikenal dengan sikapnya yang keras kepala dan berani. Dia memiliki kekuatan super, termasuk kemampuan terbang, kekuatan fisik yang luar biasa, dan kemampuan untuk memanipulasi energi. Guy juga dikenal karena kepribadiannya yang unik dan sering kali bertindak sebagai karakter yang humoris dalam tim.</p>
-    `;
+function klikProfil(element) {
+    const hero = element.getAttribute('data-hero');
+    let content = "";
+
+    if (hero === "guy") {
+        content = `<b>Guy Gardner</b><br>
+    Pemimpin dari The Justice Gang.<br>
+    Memiliki cincin Green Lantern yang memberikan kekuatan konstruksi cahaya menjadi benda fisik yang nyata.<br>
+    Meskipun kadang terlihat arogan, Guy Gardner sangat setia pada teman-temannya dan selalu siap membela keadilan.`;
+    } else if (hero === "terrific") {
+        content = "<b>Mr Terrific</b><br>Genius dengan IQ tinggi dan kemampuan teknologi canggih. Ia adalah ahli strategi tim.";
+    } else if (hero === "hawkgirl") {
+        content = "<b>Hawkgirl</b><br>Pahlawan wanita tangguh dengan kekuatan terbang. Ahli dalam seni bela diri dan menggunakan senjata tajam.";
+    } else if (hero === "metamorpho") {
+        content = "<b>Metamorpho</b><br>Bisa berubah bentuk dan sangat fleksibel dalam bertarung. Bisa meniru segala jenis elemen dengan tubuhnya.";
+    }
+
+    document.getElementById("data-hero").innerHTML = content;
 }

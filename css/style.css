@@ -45,6 +45,33 @@
     padding: 7px;
 }
 
+.header-utama {
+    margin-bottom: 0;
+}
+
+.main {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.main-home {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.header-home {
+    margin-top: 0;
+}
+
+section {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
 .main {
     margin-top: 0;
 }
@@ -77,6 +104,8 @@
 
 .main-about {
     min-height: 500px;
+    background-image: url("../asset/BackgroundPutih.jpg");
+    background-size: cover;
 }
 
 .header-about {
@@ -91,63 +120,120 @@
 
 .member-logos {
     display: flex;
-    justify-content: center; /* tengah horizontal */
-    align-items: center;     /* tengah vertikal jika tinggi parent cukup */
-    gap: 40px;               /* jarak antar logo */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
     margin-top: 20px;
 }
 
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
 .guy-logo {
-    background-position: center;
     height: 100px;
     width: 100px;
-    background-color: chocolate;
     background-image: url("../asset/guy.jpeg");
     background-size: cover;
+    background-position: center;
     border-radius: 50%;
     border: 2px solid black;
+    margin-bottom: 8px;
 }
 
-.mr-terrific {
-     background-position: top;
+.mr-terrific-logo {
     height: 100px;
     width: 100px;
-    background-color: chocolate;
     background-image: url("../asset/terrific.jpeg");
     background-size: cover;
+    background-position: top;
     border-radius: 50%;
-    margin: 30px 0 0 50px;
     border: 2px solid black;
+    margin-bottom: 8px;
 }
 
-.hawkgirl {
-    background-position: top;
+.hawkgirl-logo {
     height: 100px;
     width: 100px;
-    background-color: chocolate;
     background-image: url("../asset/hawkgirl.jpeg");
     background-size: cover;
+    background-position: center;
     border-radius: 50%;
-    margin: 30px 0 0 50px;
     border: 2px solid black;
+    margin-bottom: 8px;
 }
 
-.metamorpho {
-    background-position: top;
+.metamorpho-logo {
     height: 100px;
     width: 100px;
-    background-color: chocolate;
     background-image: url("../asset/metamorpho.jpg");
     background-size: cover;
+    background-position: center;
     border-radius: 50%;
-    margin: 30px 0 0 50px;
     border: 2px solid black;
+    margin-bottom: 8px;
 }
 .main-portofolio {
     min-height: 500px;
+    background-image: url("../asset/BackgroundPutih.jpg");
+    background-size: cover;
 }
+
+.header-portofolio {
+    text-align: center;
+}
+
+.perkenalan-portofolio {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+.portofolio-pictures {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;}
+
+.kaiju {
+    height: 200px;
+    width: 300px;
+    background-image: url("../asset/kaiju.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.boravian {
+    height: 200px;
+    width: 300px;
+    background-image: url("../asset/boravia.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.metropolis {
+    height: 200px;
+    width: 300px;
+    background-image: url("../asset/metropolis.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
 .main-message {
     min-height: 500px;
+    background-image: url("../asset/BackgroundPutih.jpg");
+    background-size: cover;
 }
 .header-message {
     text-align: center;
@@ -178,6 +264,6 @@
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: chocolate;
-    color: white;
+    color: rgb(0, 0, 0);
+    background-image: url("../asset/backgroundAbu.jpg");
 }

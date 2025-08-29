@@ -17,10 +17,10 @@
 
          <!-- navigation bar -->
           <nav class="navigasi-utama">
-            <a href="#home" class="navigasi-home">Home</a>
-            <a href="#about-us" class="navigasi-about">About Us</a>
-            <a href="#portofolio" class="navigasi-portofolio">Portofolia</a>
-            <a href="#message-us" class="navigasi-message">Message Us</a>
+            <a href="#home" class="navigasi-home"> <b> Home </b> </a>
+            <a href="#about-us" class="navigasi-about"><b> About Us </b></a>
+            <a href="#portofolio" class="navigasi-portofolio"> <b> Portofolio </b> </a>
+            <a href="#message-us" class="navigasi-message"> <b> Message Us </b> </a>
           </nav>
     </header>
 
@@ -47,24 +47,36 @@
 
           <p class="perkenalan-about"> Members of The Justice Gang</p>
 
-         <main class="member-logos">
+         <div class="member-logos">
          <!-- guy gardner -->
-         <div onclick="klikProfil()" type="button" class="guy-logo"></div>
+         <div data-hero="guy" onclick="klikProfil(this)" type="button" class="hero-card">
+         <div class="guy-logo"></div>
             <p><b>Guy Gardner</b><br/>Leader</p>
-         <!-- mr terrific -->
-         <div onclick="klikProfil()" type="button" class="mr-terrific"></div>
-            <p><b>Mr Terrific</b><br/>Member</p>
-         <!-- hawkgirl -->
-          <div onclick="klikProfil()" type="button" class="hawkgirl"></div>
-            <p><b>Hawkgirl</b><br/>Member</p>
-         <!-- metamorpho -->
-          <div onclick="klikProfil()" type="button" class="metamorpho"></div>
-            <p><b>Metamorpho</b><br/>Member</p>
-         </main>
+            </div>
 
-         <div id="profil-guy" style="border:5px solid
+         <!-- mr terrific -->
+         <div data-hero="terrific" onclick="klikProfil(this)" type="button" class="hero-card">
+         <div class="mr-terrific-logo"></div>
+            <p><b>Mr Terrific</b><br/>Member</p>
+            </div>
+
+         <!-- hawkgirl -->
+          <div data-hero="hawkgirl" onclick="klikProfil(this)" type="button" class="hero-card">
+          <div class="hawkgirl-logo"></div>
+            <p><b>Hawkgirl</b><br/>Member</p>
+            </div>
+
+         <!-- metamorpho -->
+          <div data-hero="metamorpho" onclick="klikProfil(this)" type="button" class="hero-card">
+          <div class="metamorpho-logo"></div>
+            <p><b>Metamorpho</b><br/>Member</p>
+          </div>
+            
+         </div>
+
+         <div id="data-hero" style="border:5px solid
           #070606; padding:10px; width:700px; 
-          min-height:200px; margin-top:20px; margin-left: 200px;"></div>
+          min-height:200px; margin-top:10px; margin-left: 250px;"></div>
 
         </section>
 
@@ -72,7 +84,29 @@
 
         <!-- Portofolia -->
          <section id="portofolio" class="main-portofolio">
-         portofolio
+            <header>
+            <h2 class="header-portofolio">Portofolio</h2>
+            <p class="perkenalan-portofolio"> Here are some of our works </p>
+            </header>
+
+            <main>
+
+                <ul class="list-portofolio">
+                    <li><u>Helping Superman to beat a rampaging kaiju in Metropolis</u></li>
+                    <br/>
+                    <li><u>Stopping the Boravian armys attack on Jarnhanpur</u></li>
+                    <br/>
+                    <li><u>Take down the interdimensional octopus in Metropolis</u></li>
+                    <br/>
+                    <li><u>Helping Superman in order to relieve chaos cause by Lex Luthor</u></li>
+                </ul>
+
+                <div class="portofolio-pictures">
+                    <div class="kaiju"></div>
+                    <div class="boravian"></div>
+                    <div class="metropolis"></div>
+                </div>
+            </main>
             </section>
 
             <hr/>
