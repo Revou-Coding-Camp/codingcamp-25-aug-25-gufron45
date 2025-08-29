@@ -9,18 +9,88 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="design-body">
 
-    <header>
+    <header class="header-utama">
+        <!-- icon -->
+         <div class="logo"></div>
 
+         <!-- navigation bar -->
+          <nav class="navigasi-utama">
+            <a href="#home" class="navigasi-home">Home</a>
+            <a href="#about-me" class="navigasi-about">About Me</a>
+            <a href="#portofolio" class="navigasi-portofolio">Portofolia</a>
+            <a href="#message-me" class="navigasi-message">Message Me</a>
+          </nav>
     </header>
+
+    <hr/>
 
     <main>
 
+        <!-- Home -->
+         <section id="home" class="main-home"> 
+         <header>
+            <h1 class="header-home">Hi <span style="color: navy;" id="nama"></span>! Welcome To My Website</h1>
+         </header>
+            <p>Perkenalkan nama saya Dede Muhamad Gufron, saya seorang mahasiswa semester 5 di Universitas
+            </section>
+
+         <hr/>
+
+        <!-- About Us -->
+         <section id="about-me" class="main-about">
+         about us
+            </section>
+
+            <hr/>
+
+        <!-- Portofolia -->
+         <section id="portofolio" class="main-portofolio">
+         portofolio
+            </section>
+
+            <hr/>
+
+        <!-- Message Us -->
+         <section id="message-me" class="main-message">
+            <h2 class="header-message">Message Me</h2>
+
+            <form style="display: flex; gap: 300px; align-items: flex-start;">
+                <div>
+                <label for="nama-pengunjung">Nama : </label>
+                <input class="nama-pengunjung" type="text" id="nama-pengunjung" placeholder="Masukkan Nama Anda" required>
+                <br/>
+                <label for="nomor-pengunjung">Nomor Hp : </label>
+                <input class="nomor-pengunjung" type="number" id="nomor-pengunjung"
+                placeholder="Masukan Nomor Hp Anda" required>
+                <br/>
+                <label for="email-pengunjung">Email : </label>
+                <input class="email-pengunjung" type="text" id="email-pengunjung" 
+                placeholder="Masukkan Email Anda" required>
+                <br/>
+                <br/>
+                <label for="pesan">Pesan untuk Saya : </label> <br/>
+                <textarea class="pesan" type="text" id="pesan"
+                placeholder="Berikan pendapat anda...." required></textarea>
+                <br/>
+                <br/>
+                <button onclick="validasiform()" type="button">Kirim</button>
+
+                </div>
+                <div id="hasil" style="border:5px solid #070606; padding:10px; width:400px; min-height:300px;"></div>
+
+            </form>
+
+            </section>
+
     </main>
 
-    <footer>
+    <hr/>
 
+    <footer class="footer">
+        <p>Created by Dede Muhamad Gufron</p>
+        <p>For Educational Purpose</p>
     </footer>
 
     <script src="js/script.js"></script>
