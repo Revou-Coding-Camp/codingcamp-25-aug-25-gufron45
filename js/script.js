@@ -36,3 +36,11 @@ function validasiform() {
         <b>Pesan:</b> ${pesan}
     `;
 }
+
+// fungsi klik profil hero
+function klikProfil() {
+    document.getElementById("profil-guy").innerHTML = `
+        <h3>Guy Gardner</h3>
+        <p>Guy Gardner adalah seorang anggota Justice Gang yang dikenal dengan sikapnya yang keras kepala dan berani. Dia memiliki kekuatan super, termasuk kemampuan terbang, kekuatan fisik yang luar biasa, dan kemampuan untuk memanipulasi energi. Guy juga dikenal karena kepribadiannya yang unik dan sering kali bertindak sebagai karakter yang humoris dalam tim.</p>
+    `;
+}

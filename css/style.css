@@ -3,7 +3,7 @@
     height: 50px;
     width: 50px;
     background-color: chocolate;
-    background-image: url(https://picsum.photos/id/237/200/300);
+    background-image: url("../asset/justice.jpg");
     background-size: cover;
     border-radius: 50%;
 }
@@ -12,7 +12,9 @@
         display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(asset/background-biru.jpg);
+    margin-bottom: 0;
+    background-image: url("../asset/backgroundAbu.jpg");
+    
 }
 
 .design-body {
@@ -43,16 +45,103 @@
     padding: 7px;
 }
 
+.main {
+    margin-top: 0;
+}
 
 .main-home {
     min-height: 500px;
+    background-image: url("../asset/BackgroundPutih.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .header-home {
     text-align: center;
 }
 
+.perkenalan {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+.justice-gang {
+    background-image: url("../asset/theGang.jpg");
+    height: 300px;
+    width: 500px;
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+}
+
 .main-about {
     min-height: 500px;
+}
+
+.header-about {
+    text-align: center;
+}
+
+.perkenalan-about {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+.member-logos {
+    display: flex;
+    justify-content: center; /* tengah horizontal */
+    align-items: center;     /* tengah vertikal jika tinggi parent cukup */
+    gap: 40px;               /* jarak antar logo */
+    margin-top: 20px;
+}
+
+.guy-logo {
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    background-image: url("../asset/guy.jpeg");
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.mr-terrific {
+     background-position: top;
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    background-image: url("../asset/terrific.jpeg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 30px 0 0 50px;
+    border: 2px solid black;
+}
+
+.hawkgirl {
+    background-position: top;
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    background-image: url("../asset/hawkgirl.jpeg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 30px 0 0 50px;
+    border: 2px solid black;
+}
+
+.metamorpho {
+    background-position: top;
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    background-image: url("../asset/metamorpho.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 30px 0 0 50px;
+    border: 2px solid black;
 }
 .main-portofolio {
     min-height: 500px;
