@@ -267,3 +267,44 @@ h1, h2, h3, p {
     color: rgb(0, 0, 0);
     background-image: url("../asset/backgroundAbu.jpg");
 }
+
+@media (max-width: 600px) {
+    .header-utama, .navigasi-utama {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .main, .main-home, .main-about, .main-portofolio, .main-message, section {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .member-logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hero-card {
+        width: 90vw;
+        max-width: 350px;
+    }
+
+    #data-hero, #hasil {
+        width: 90vw !important;
+        min-width: unset;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    form {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .portofolio-pictures {
+        flex-direction: column;
+        align-items: center;
+    }
+}
